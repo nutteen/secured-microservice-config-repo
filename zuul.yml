@@ -4,3 +4,9 @@ eureka:
             defaultZone: http://eureka-server:8761/eureka
     instance:
         preferIpAddress: true
+
+zuul:
+  routes:
+    purchases:
+      path: /purchase/**
+      serviceId: purchase-service
