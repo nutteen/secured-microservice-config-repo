@@ -10,3 +10,12 @@ zuul:
     purchases:
       path: /purchase/**
       serviceId: purchase-service
+
+spring:
+  boot:
+    admin:
+      url: http://admin-server:8080
+
+management:
+  security:
+    enabled: false
