@@ -7,3 +7,12 @@ eureka:
 security:
   basic:
     enabled: false
+
+spring:
+  boot:
+    admin:
+      url: http://admin-server:8080
+
+management:
+  security:
+    enabled: false
