@@ -1,0 +1,19 @@
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+logging:
+  level:
+    com.netflix:
+      eureka: OFF
+      discovery: OFF
+
+spring:
+  boot:
+    admin:
+      url: http://admin-server:8080
+
+management:
+  security:
+    enabled: false
