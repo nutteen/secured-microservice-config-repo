@@ -1,0 +1,21 @@
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://192.168.1.50:8761/eureka
+    instance:
+        preferIpAddress: true
+
+zuul:
+  routes:
+    purchases:
+      path: /purchase/**
+      serviceId: purchase-service
+
+spring:
+  boot:
+    admin:
+      url: http://192.168.1.50:8092
+
+management:
+  security:
+    enabled: false
