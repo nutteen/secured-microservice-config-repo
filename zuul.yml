@@ -5,12 +5,6 @@ eureka:
     instance:
         preferIpAddress: true
 
-zuul:
-  routes:
-    purchases:
-      path: /purchase/**
-      serviceId: purchase-service
-
 spring:
   boot:
     admin:
