@@ -10,6 +10,9 @@ spring:
     admin:
       url: http://admin-server:8080
 
+zuul:
+  sensitive-headers: Authorization
+
 management:
   security:
     enabled: false
