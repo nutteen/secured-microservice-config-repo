@@ -3,7 +3,9 @@ eureka:
         serviceUrl:
             defaultZone: http://eureka-server:8080/eureka
     instance:
-        preferIpAddress: true
+        preferIpAddress: false
+        hostname: purchase-service
+        ip-address: 172.255.152.115
 
 security:
   basic:
