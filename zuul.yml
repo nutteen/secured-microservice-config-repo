@@ -11,6 +11,10 @@ spring:
       url: http://admin-server:8080
 
 zuul:
+  routes:
+    purchases:
+      path: /purchase/**
+      serviceId: purchase-service
   sensitive-headers: Authorization
 
 management:
