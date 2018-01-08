@@ -5,6 +5,7 @@ eureka:
     instance:
         preferIpAddress: false
         hostname: 172.255.152.115
+        ip-address: 127.0.0.1
 
 security:
   basic:
